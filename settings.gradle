@@ -1,0 +1,5 @@
+include ':app'
+// 配置flutter module
+setBinding(new Binding([gradle: this]))
+evaluate(new File(settingsDir.parentFile,
+        '/flutter_takeout/flutter_takeout/.android/include_flutter.groovy'))
